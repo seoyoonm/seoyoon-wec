@@ -3,5 +3,6 @@ class HomeController < ApplicationController
 	end
 	def login_success
 		@username = params[:username]
+		@passwd = params[:passwd]
 	end
 end
