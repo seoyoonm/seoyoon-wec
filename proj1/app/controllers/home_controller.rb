@@ -9,6 +9,9 @@ class HomeController < ApplicationController
 		m = Member.new
 		m.username = params[:username]
 		m.password = params[:passwd]
+		m.count = 1
 		m.save
+		@username = params[:username]
+		@count = 1
 	end
 end
