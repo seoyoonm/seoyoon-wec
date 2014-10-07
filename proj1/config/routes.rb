@@ -2,6 +2,7 @@ Proj1::Application.routes.draw do
   get "home/login_form" => 'home#login_form'
 	get "home/login_success" => 'home#login_success'
 	post "home/signup" => 'home#signup'
+	get "home/list" => 'home#list'
 	# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

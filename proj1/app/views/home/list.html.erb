@@ -1,0 +1,6 @@
+<h1>List of Tourify members</h1>
+<% @members.each do |member| %>
+	<p><strong><%= member.username %></strong> <%= member.password %> <%= member.count %></p>
+<% end %>
+<br>
+<a href="/home">Go to main</a>
