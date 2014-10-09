@@ -1,8 +1,13 @@
 Assignment1::Application.routes.draw do
-  get "main/signup"
-  get "main/login"
-  get "main/clearData"
-  # The priority is based upon order of creation: first created -> highest priority.
+	get "main/signup"
+	get "main/login"
+	get "main/clearData"
+  #get "main"
+	#get "welcome"
+	post "signup" => 'main#signup'
+  #post "login"
+	#post "clearData"
+	# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
