@@ -1,4 +1,7 @@
 Assignment1::Application.routes.draw do
+  get "user/signup"
+  get "user/login"
+  get "user/clearData"
 	get "main/signup"
 	get "main/login"
 	get "main/clearData"
