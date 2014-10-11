@@ -1,15 +1,20 @@
 Assignment1::Application.routes.draw do
+  get "home/main"
+	post "/main" => 'home#main'
+  get "home/welcome"
+	get "/welcome" => 'home#welcome'
+	post "/welcome" => 'home#welcome'
+
   get "user/signup"
+  post "user/signup" => 'user#signup'
+  post "signup" => 'user#signup'
+
   get "user/login"
   get "user/clearData"
-	get "main/signup"
-	get "main/login"
-	get "main/clearData"
-  #get "main"
-	#get "welcome"
-	post "signup" => 'main#signup'
-  #post "login"
-	#post "clearData"
+  get "main" => 'home#main'
+
+	get "list" => 'user#list'
+
 	# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

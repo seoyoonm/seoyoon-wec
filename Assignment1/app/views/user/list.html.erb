@@ -1,0 +1,11 @@
+<div>
+	<h1>Users</h1>
+		<p> Username Password Login Count
+		<% @users.each do |user| %>
+			<div>
+			<p><%= user.user_name %> <%= user.password %> <%= user.login_count %></p>
+			</div><br>
+		<% end %>
+		<a href="/main">Go to Main Page</a>
+
+</div>
